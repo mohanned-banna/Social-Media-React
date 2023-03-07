@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Inter:wght@300&family=Tajawal&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100% ;
+    font-family: 'Inter';
+    font-weight: 500;
+    background: linear-gradient(90deg ,rgb(174, 209, 233)0%,rgb(140, 202, 241)50%,rgb(92, 190, 239)100%);
+    
+}
+
+
+
+.show{
+    position: absolute;
+    display: flex;
+    margin-left: 0;
+    z-index: 100;
+    transition: margin-left 0.5s ease-in-out;
+    -webkit-transition: margin-left 0.5s ease-in-out;
+    -moz-transition: margin-left 0.5s ease-in-out;
+    -ms-transition: margin-left 0.5s ease-in-out;
+    -o-transition: margin-left 0.5s ease-in-out;
+}
+@media screen and (max-width:641px) {
+    .disapper{
+        position: absolute;
+        margin-left: -500%;
+        transition: margin-left 0.5s ease-in-out;
+        -webkit-transition: margin-left 0.5s ease-in-out;
+        -moz-transition: margin-left 0.5s ease-in-out;
+        -ms-transition: margin-left 0.5s ease-in-out;
+        -o-transition: margin-left 0.5s ease-in-out;
+}
+}
+@media screen and (min-width:490px) and (max-width:641px) {
+    .input-user{
+        margin-top: 40%;
+    }
+}
+@media screen and (min-width:410px) and (max-width:489px) {
+    .input-user{
+        margin-top: 55%;
+    }
+}
+
