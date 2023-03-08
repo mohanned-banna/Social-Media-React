@@ -4,6 +4,7 @@ import LoginPage from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
 import NavBar  from './components/NavBar';
 import "./components/NavBar.css";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/Login" element={<LoginPage />} />
             <Route path="/Register" element={<RegisterPage />} />
+            <Route path="/Contact" element={<ContactPage src=""/>} />
           </Routes>
       </div>
         
