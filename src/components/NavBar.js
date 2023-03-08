@@ -32,16 +32,18 @@ export default function NavBar() {
                 'show': !isChecked
             }
           )}
+          
         >
           <ListItem
             name="Login"
-            link="#"
-            classname="bg-opacity-20 bg-white sm:rounded-md  w-full"
+            link="/Login"
+            classname=" w-full"
+            
           />
           
-            <ListItem name="About Us" link="#" classname=" w-full" />
-            <ListItem name="Register" link="#" classname=" w-full" />
-            <ListItem name="Contact" link="#" classname=" w-full"/>
+            <ListItem name="About Us" link="/other" classname=" w-full" />
+            <ListItem name="Register" link="/Register" classname=" w-full" />
+            <ListItem name="Contact" link="/other2" classname=" w-full"/>
           
           
         </ul>
