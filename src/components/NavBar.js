@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <div className="container w-11/12 mx-auto ">
-      <nav className="flex flex-col sm:flex-row mt-10 items-center ">
+      <nav className="flex flex-col sm:flex-row mt-10 items-center border-b-4 pb-3 border-r-0 sm:border-none">
         <div className="logo  sm:basis-3/4 w-full">
           <span className="text-2xl font-medium ">Social Media</span>
           <button

@@ -11,7 +11,18 @@ body{
     background: linear-gradient(90deg ,rgb(174, 209, 233)0%,rgb(140, 202, 241)50%,rgb(92, 190, 239)100%);
     
 }
+h4,span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+}
+span{
+    font-weight: 500;
+    font-size: 17px;
 
+}
 
 
 .show{
