@@ -4,15 +4,23 @@ import "../components/NavBar.css";
 import ListItem from "./ListItem";
 import classNames from "classnames";
 
+const navLinks = [
+   { key:1 , name: "Login", link: '/Login' , classname : "w-full text-red"},
+   { key:2 , name: "About Us", link: '/About Us' , classname : "w-full"},
+   { key:3 , name: "Register", link: '/Register' , classname :"w-full"},
+   { key:4 , name: "Contact", link: '/Contact' , classname : "w-full"},
+  
+
+]
 export default function NavBar() {
   
-  const [isChecked, setIsChecked] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
   
 
   return (
-    <div className="container w-11/12 mx-auto ">
+    <div className="container w-11/12 mx-auto">
       <nav className="flex flex-col sm:flex-row mt-10 items-center border-b-4 pb-3 border-r-0 sm:border-none">
-        <div className="logo  sm:basis-3/4 w-full">
+        <div className="logo w-full">
           <span className="text-2xl font-medium ">Social Media</span>
           <button
             className="sm:hidden float-right w-8"
@@ -26,27 +34,21 @@ export default function NavBar() {
         <ul
           
           className={classNames(
-            "text-center items-center flex-col sm:flex-row bg-[#458bb6]  sm:bg-transparent w-[100vw] mt-5 sm:mt-0 md:w-[71vw] lg:w-[52vw] xl:w-[29vw]  sm:flex sm:left-0 top-[10%] ",
+            "text-center items-center flex-col sm:flex-row bg-[#458bb6]  sm:bg-transparent w-[100vw] mt-5 sm:mt-0 md:w-[71vw] lg:w-[52vw]   sm:flex sm:left-0 top-[10%] ",
             {
-                'disapper': isChecked,
-                'show': !isChecked
+                'disapper invisible sm:visible':  !isChecked,
+                'show': isChecked
             }
           )}
           
         >
-          <ListItem
-            name="Login"
-            link="/Login"
-            classname=" w-full"
-            
-          />
           
-            <ListItem name="About Us" link="/other" classname=" w-full" />
-            <ListItem name="Register" link="/Register" classname=" w-full" />
-            <ListItem name="Contact" link="/Contact" classname=" w-full"/>
+            {navLinks.map((item) => <ListItem onClick={() => setIsChecked(false)} key = {item.key} name={item.name} link={item.link} classname={item.classname} />)}
+            
           
           
         </ul>
+        
       </nav>
     </div>
   );

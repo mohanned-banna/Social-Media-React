@@ -13,10 +13,10 @@ export default function LoginPage() {
         <ButtonSubmit name="GET STARTED"/>
       </form>
         
-        <ul className="flex relative sm:w-[25rem] sm:mt-52 sm:ml-5 mt-44  ml-[-2%] parent-footer">
-          <ListItem name="About Us" link="/About Us" classname =" ml-6   footer sm:w-15 "/>
-          <ListItem name="Privacy Policy" link="/Privacy Policy" classname =" mx-0 pl-2 pr-2 footer sm:w-[100px]"/>
-          <ListItem name="Terms Of Use" link="/Terms Of Use" classname =" pl-2 pr-2 footer sm:w-[100px]"/> 
+        <ul className="flex relative sm:w-[25rem] sm:mt-52 sm:ml-5 mt-40 parent-footer">
+          <ListItem name="About Us" link="/About Us" classname =" ml-6 footer sm:w-15 sm:w-[100px] "/>
+          <ListItem name="Privacy Policy" link="/Privacy Policy" classname =" mx-0 footer sm:w-[100px] "/>
+          <ListItem name="Terms Of Use" link="/Terms Of Use" classname ="   footer sm:w-[100px]"/> 
         </ul>
     </div>
   )
