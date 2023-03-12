@@ -21,7 +21,7 @@ export default function HomeNavBar() {
     const [isChecked, setIsChecked] = useState(false);
   return (
         <div>
-            <div className='w-full h-20 sm:h-20  bg-[#51aedc] flex gap-5 items-center md:gap-12 sm:pl-10'>
+            <div className='w-full h-20 sm:h-20  bg-[#51aedc] flex gap-5 items-center md:gap-12 sm:pl-10 justify-around'>
                 <div className="logo flex items-center ">
                 <img src={logo} alt="this is logo" className="w-10 ml-5 sm:mb-0 " />
                 <span className="text-2xl font-medium hidden lg:inline-block">Social Media</span>
