@@ -10,7 +10,7 @@ import HomePage from "./Pages/HomePage";
 function App() {
   return (
     <Router>
-      <div className="App" >
+      <div className="App">
       
       <div className="content">
           <Routes>
