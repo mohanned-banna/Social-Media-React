@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "../components/NavBar.css";
+import "./NavBar.css";
 
-import ListItem from "./ListItem";
+import ListItem from "../ListItem";
 import classNames from "classnames";
+import logo from './../../images/logo.png'
 
 const navLinks = [
    { key:1 , name: "Login", link: '/Login' , classname : "w-full text-red"},
@@ -12,16 +13,13 @@ const navLinks = [
   
 
 ]
-export default function NavBar() {
-  
+export default function NavBar() {  
   const [isChecked, setIsChecked] = useState(false);
-  
-
   return (
     <div className="container w-11/12 mx-auto">
       <nav className="flex flex-col sm:flex-row mt-10 items-center border-b-4 pb-3 border-r-0 sm:border-none">
         <div className="logo w-full">
-          <span className="text-2xl font-medium ">Social Media</span>
+          <span className="text-2xl font-medium"><img src={logo} alt="this is logo" className="w-10 ml-5 mb-4 sm:mb-0 inline-block" /></span>
           <button
             className="sm:hidden float-right w-8"
             onClick={() => {

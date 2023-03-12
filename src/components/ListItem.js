@@ -1,10 +1,9 @@
 import React from 'react'
 import  {Link, NavLink}  from 'react-router-dom' 
 import classNames from 'classnames'
-import '../components/NavBar.css';
+import "./Navbar/NavBar.css";
 
-export default function ListItem(props) {
-    const{name , link ,classname,onClick} = props
+export default function ListItem({name , link ,classname,onClick}) {
   return (
    <NavLink to={link} className={({isActive}) =>{
     return (isActive ? "bg-opacity-20 bg-white sm:rounded-md   py-[5px] px-[8px] sm:mx-2 sm:py-0  w-full sm:w-[120px]" : "sm:hover:bg-opacity-20 sm:hover:bg-white rounded-md  duration-300 py-[5px] sm:px-[8px] w-full md:w-[120px]  sm:py-0 sm:mx-2")
