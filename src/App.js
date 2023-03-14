@@ -11,7 +11,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-      
       <div className="content">
           <Routes>
             <Route path="/Login" element={<LoginPage />} />
@@ -22,7 +21,6 @@ function App() {
       </div>
       </div>
     </Router>
-    
   );
 }
 
