@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default function UserImage({userimage,classname}) {
+export default function UserImage({userImage,classname}) {
   return (
     <div className={classname} >
-      <img src={userimage} alt="this is user image" className='w-full'/>
+      <img src={userImage} alt="this is user image" className='w-full'/>
     </div>
   )
 }
